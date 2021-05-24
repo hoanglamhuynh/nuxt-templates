@@ -28,8 +28,16 @@ export default {
   ],
 
   modules: [
+    '@nuxtjs/dotenv',
+    'nuxt-webfontloader'
   ],
 
   build: {
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Cabin:400,700']
+    }
   }
 }
